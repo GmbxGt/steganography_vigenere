@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>vigenere</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          vigenere/run/steganography/test_full/utils/main/gui <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="vigenere.html" class="internal-link" title="This module">vigenere</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#vigenere_decrypt" class="internal-link" title="vigenere.vigenere_decrypt">vigenere<wbr></wbr>_decrypt</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#vigenere_encrypt" class="internal-link" title="vigenere.vigenere_encrypt">vigenere<wbr></wbr>_encrypt</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_prepare_key" class="internal-link" title="vigenere._prepare_key">_prepare<wbr></wbr>_key</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#LETTERS" class="internal-link" title="vigenere.LETTERS">LETTERS</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapse-sidebar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <main class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="vigenere.html" class="internal-link">vigenere</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Шифр Виженера.</p>
+<p>Модуль реализует шифрование и расшифрование текста по алгоритму Виженера
+для расширенного алфавита проекта (латиница + кириллица и некоторые спецсимволы).</p>
+</div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id2">
+  
+  
+  <tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#vigenere_decrypt" class="internal-link" title="vigenere.vigenere_decrypt">vigenere<wbr></wbr>_decrypt</a></code></td>
+    <td>Расшифровывает текст, зашифрованный шифром Виженера.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#vigenere_encrypt" class="internal-link" title="vigenere.vigenere_encrypt">vigenere<wbr></wbr>_encrypt</a></code></td>
+    <td>Шифрует текст шифром Виженера.</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#LETTERS" class="internal-link" title="vigenere.LETTERS">LETTERS</a></code></td>
+    <td><span class="rst-undocumented">Undocumented</span></td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_prepare_key" class="internal-link" title="vigenere._prepare_key">_prepare<wbr></wbr>_key</a></code></td>
+    <td>Подготавливает ключ для шифра Виженера.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basefunction">
+  
+  
+  <a name="vigenere.vigenere_decrypt">
+    
+  </a>
+  <a name="vigenere_decrypt">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">vigenere_decrypt</span><span class="function-signature">(<span class="rst-sig-param">text: <code>str</code>, </span><span class="rst-sig-param">key: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#vigenere_decrypt" title="vigenere.vigenere_decrypt">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Расшифровывает текст, зашифрованный шифром Виженера.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">text:</span>str</td><td class="fieldArgDesc">Зашифрованный текст.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">key:</span>str</td><td class="fieldArgDesc">Ключ шифрования.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">str</td><td class="fieldArgDesc">Расшифрованный текст.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>ValueError</code></td><td>Если ключ пустой или не содержит допустимых символов (см. <tt class="rst-docutils rst-literal">_prepare_key</tt>).</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="vigenere.vigenere_encrypt">
+    
+  </a>
+  <a name="vigenere_encrypt">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">vigenere_encrypt</span><span class="function-signature">(<span class="rst-sig-param">text: <code>str</code>, </span><span class="rst-sig-param">key: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#vigenere_encrypt" title="vigenere.vigenere_encrypt">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Шифрует текст шифром Виженера.</p>
+<p>Текст приводится к верхнему регистру. Символы, отсутствующие в алфавите,
+не шифруются и переносятся в результат без изменений.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">text:</span>str</td><td class="fieldArgDesc">Открытый текст.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">key:</span>str</td><td class="fieldArgDesc">Ключ шифрования.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">str</td><td class="fieldArgDesc">Зашифрованный текст.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>ValueError</code></td><td>Если ключ пустой или не содержит допустимых символов (см. <tt class="rst-docutils rst-literal">_prepare_key</tt>).</td></tr></table></div>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="vigenere.LETTERS">
+    
+  </a>
+  <a name="LETTERS">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">LETTERS</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#LETTERS" title="vigenere.LETTERS">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code><span class="rst-variable-quote">'</span><span class="rst-variable-string">ABCDEFGHIJKLMNOPQRSTUVWXYZАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЪЫЭЮЯҐЄІЎЇÜÖÄẞÅÆØ</span><span class="rst-variable-quote">'</span></code></pre></td></tr></table>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="vigenere._prepare_key">
+    
+  </a>
+  <a name="_prepare_key">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_prepare_key</span><span class="function-signature">(<span class="rst-sig-param">key: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#_prepare_key" title="vigenere._prepare_key">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Подготавливает ключ для шифра Виженера.</p>
+<p>Функция приводит ключ к верхнему регистру и удаляет символы, которых нет в алфавите.
+Возвращает список символов ключа и индексную таблицу алфавита.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">key:</span>str</td><td class="fieldArgDesc">Исходный ключ.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">tuple[list[str], dict[str, int], int]</td><td class="fieldArgDesc">Кортеж <tt class="rst-docutils rst-literal">(key_filtered, index, n)</tt>, где <tt class="rst-docutils rst-literal">key_filtered</tt> — список допустимых символов ключа,
+<tt class="rst-docutils rst-literal">index</tt> — отображение <tt class="rst-docutils rst-literal">символ <span class="pre">-&gt;</span> позиция</tt> в алфавите, <tt class="rst-docutils rst-literal">n</tt> — длина алфавита.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>ValueError</code></td><td>Если ключ пустой.</td></tr><tr><td class="fieldArgContainer"><code>ValueError</code></td><td>Если после фильтрации ключ не содержит допустимых символов.</td></tr></table></div>
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for vigenere/run/steganography/test_full/utils/main/gui,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    25.10.1 at 2025-12-17 08:11:44.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

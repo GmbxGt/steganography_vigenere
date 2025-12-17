@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>steganography</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          vigenere/run/steganography/test_full/utils/main/gui <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="steganography.html" class="internal-link" title="This module">steganography</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="steganography.CapacityInfo.html" class="internal-link" title="steganography.CapacityInfo"><wbr></wbr>Capacity<wbr></wbr>Info</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#binary_to_text" class="internal-link" title="steganography.binary_to_text">binary<wbr></wbr>_to<wbr></wbr>_text</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#extract_text_from_container" class="internal-link" title="steganography.extract_text_from_container">extract<wbr></wbr>_text<wbr></wbr>_from<wbr></wbr>_container</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_capacity" class="internal-link" title="steganography.get_capacity">get<wbr></wbr>_capacity</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#hide_text_in_container" class="internal-link" title="steganography.hide_text_in_container">hide<wbr></wbr>_text<wbr></wbr>_in<wbr></wbr>_container</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#text_to_binary" class="internal-link" title="steganography.text_to_binary">text<wbr></wbr>_to<wbr></wbr>_binary</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_bits_to_bytes" class="internal-link" title="steganography._bits_to_bytes">_bits<wbr></wbr>_to<wbr></wbr>_bytes</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_bytes_to_bits" class="internal-link" title="steganography._bytes_to_bits">_bytes<wbr></wbr>_to<wbr></wbr>_bits</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#HEADER_BITS" class="internal-link" title="steganography.HEADER_BITS">HEADER<wbr></wbr>_BITS</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#MAGIC" class="internal-link" title="steganography.MAGIC">MAGIC</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#ZWNJ_1" class="internal-link" title="steganography.ZWNJ_1">ZWNJ<wbr></wbr>_1</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#ZWS_0" class="internal-link" title="steganography.ZWS_0">ZWS<wbr></wbr>_0</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapse-sidebar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <main class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="steganography.html" class="internal-link">steganography</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Стеганография на основе невидимых символов.</p>
+<p>Модуль реализует скрытие бинарных данных в «контейнер» (строку) путём вставки
+нулевой ширины символов (Zero Width Space / Zero Width Non-Joiner) после пробелов.
+Также поддерживаются преобразования текста в бинарный вид и обратно.</p>
+</div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id3">
+  
+  
+  <tr class="class">
+    
+    <td>Class</td>
+    <td><code><a href="steganography.CapacityInfo.html" class="internal-link" title="steganography.CapacityInfo"><wbr></wbr>Capacity<wbr></wbr>Info</a></code></td>
+    <td>Информация о вместимости контейнера.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#binary_to_text" class="internal-link" title="steganography.binary_to_text">binary<wbr></wbr>_to<wbr></wbr>_text</a></code></td>
+    <td>Декодирует бинарную строку в исходный текст.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#extract_text_from_container" class="internal-link" title="steganography.extract_text_from_container">extract<wbr></wbr>_text<wbr></wbr>_from<wbr></wbr>_container</a></code></td>
+    <td>Извлекает скрытую бинарную строку из контейнера.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_capacity" class="internal-link" title="steganography.get_capacity">get<wbr></wbr>_capacity</a></code></td>
+    <td>Вычисляет вместимость контейнера.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#hide_text_in_container" class="internal-link" title="steganography.hide_text_in_container">hide<wbr></wbr>_text<wbr></wbr>_in<wbr></wbr>_container</a></code></td>
+    <td>Скрывает бинарные данные в контейнере.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#text_to_binary" class="internal-link" title="steganography.text_to_binary">text<wbr></wbr>_to<wbr></wbr>_binary</a></code></td>
+    <td>Кодирует текст в бинарную строку для сокрытия.</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#HEADER_BITS" class="internal-link" title="steganography.HEADER_BITS">HEADER<wbr></wbr>_BITS</a></code></td>
+    <td><span class="rst-undocumented">Undocumented</span></td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#MAGIC" class="internal-link" title="steganography.MAGIC">MAGIC</a></code></td>
+    <td><span class="rst-undocumented">Undocumented</span></td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#ZWNJ_1" class="internal-link" title="steganography.ZWNJ_1">ZWNJ<wbr></wbr>_1</a></code></td>
+    <td><span class="rst-undocumented">Undocumented</span></td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#ZWS_0" class="internal-link" title="steganography.ZWS_0">ZWS<wbr></wbr>_0</a></code></td>
+    <td><span class="rst-undocumented">Undocumented</span></td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_bits_to_bytes" class="internal-link" title="steganography._bits_to_bytes">_bits<wbr></wbr>_to<wbr></wbr>_bytes</a></code></td>
+    <td>Преобразует строку битов в байты.</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_bytes_to_bits" class="internal-link" title="steganography._bytes_to_bits">_bytes<wbr></wbr>_to<wbr></wbr>_bits</a></code></td>
+    <td>Преобразует байты в строку битов.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basefunction">
+  
+  
+  <a name="steganography.binary_to_text">
+    
+  </a>
+  <a name="binary_to_text">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">binary_to_text</span><span class="function-signature">(<span class="rst-sig-param">binary: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#binary_to_text" title="steganography.binary_to_text">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Декодирует бинарную строку в исходный текст.</p>
+<p>Ожидается формат, сформированный функцией <tt class="rst-docutils rst-literal">text_to_binary</tt>.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">binary:</span>str</td><td class="fieldArgDesc">Бинарная строка (<tt class="rst-docutils rst-literal">'0'</tt>/<tt class="rst-docutils rst-literal">'1'</tt>).</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">str</td><td class="fieldArgDesc">Декодированный текст.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>ValueError</code></td><td>Если сигнатура/заголовок повреждены или данные имеют неверный формат.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="steganography.extract_text_from_container">
+    
+  </a>
+  <a name="extract_text_from_container">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">extract_text_from_container</span><span class="function-signature">(<span class="rst-sig-param">container: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#extract_text_from_container" title="steganography.extract_text_from_container">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Извлекает скрытую бинарную строку из контейнера.</p>
+<p>Функция сканирует контейнер и ищет пары «пробел + невидимый символ»,
+восстанавливая последовательность битов.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">container:</span>str</td><td class="fieldArgDesc">Текст-контейнер со скрытыми данными.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">str</td><td class="fieldArgDesc">Извлечённая бинарная строка (<tt class="rst-docutils rst-literal">'0'</tt>/<tt class="rst-docutils rst-literal">'1'</tt>).</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="steganography.get_capacity">
+    
+  </a>
+  <a name="get_capacity">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">get_capacity</span><span class="function-signature">(<span class="rst-sig-param">container: <code>str</code></span>) -&gt; <code><a href="steganography.CapacityInfo.html" class="internal-link" title="steganography.CapacityInfo">CapacityInfo</a></code>:</span>
+    
+    <a class="headerLink" href="#get_capacity" title="steganography.get_capacity">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Вычисляет вместимость контейнера.</p>
+<p>Вместимость определяется количеством пробелов: после каждого пробела можно скрыть один бит.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">container:</span>str</td><td class="fieldArgDesc">Текст-контейнер.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">CapacityInfo</td><td class="fieldArgDesc">Информация о вместимости контейнера.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="steganography.hide_text_in_container">
+    
+  </a>
+  <a name="hide_text_in_container">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">hide_text_in_container</span><span class="function-signature">(<span class="rst-sig-param">secret: <code>str</code>, </span><span class="rst-sig-param">container: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#hide_text_in_container" title="steganography.hide_text_in_container">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Скрывает бинарные данные в контейнере.</p>
+<p>Для каждого пробела контейнера, начиная с начала строки, может быть использован один бит.
+Бит <tt class="rst-docutils rst-literal">0</tt> кодируется символом <tt class="rst-docutils rst-literal">ZWS_0</tt>, бит <tt class="rst-docutils rst-literal">1</tt> — символом <tt class="rst-docutils rst-literal">ZWNJ_1</tt>, которые вставляются сразу после пробела.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">secret:</span>str</td><td class="fieldArgDesc">Бинарная строка (<tt class="rst-docutils rst-literal">'0'</tt>/<tt class="rst-docutils rst-literal">'1'</tt>), которую требуется скрыть.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">container:</span>str</td><td class="fieldArgDesc">Текст-контейнер, содержащий достаточное число пробелов.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">str</td><td class="fieldArgDesc">Новая строка-контейнер со скрытыми данными.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>ValueError</code></td><td>Если контейнер не содержит достаточного количества пробелов для размещения всех битов.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="steganography.text_to_binary">
+    
+  </a>
+  <a name="text_to_binary">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">text_to_binary</span><span class="function-signature">(<span class="rst-sig-param">text: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#text_to_binary" title="steganography.text_to_binary">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Кодирует текст в бинарную строку для сокрытия.</p>
+<p>Текст кодируется в UTF-8, к данным добавляется сигнатура <tt class="rst-docutils rst-literal">MAGIC</tt> и заголовок
+с длиной полезной нагрузки.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">text:</span>str</td><td class="fieldArgDesc">Текст для кодирования.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">str</td><td class="fieldArgDesc">Бинарная строка (<tt class="rst-docutils rst-literal">'0'</tt>/<tt class="rst-docutils rst-literal">'1'</tt>), содержащая заголовок и полезные данные.</td></tr></table></div>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="steganography.HEADER_BITS">
+    
+  </a>
+  <a name="HEADER_BITS">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">HEADER_BITS</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#HEADER_BITS" title="steganography.HEADER_BITS">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>64</code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="steganography.MAGIC">
+    
+  </a>
+  <a name="MAGIC">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">MAGIC</span>: <code>bytes</code> =
+    
+    <a class="headerLink" href="#MAGIC" title="steganography.MAGIC">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>b<span class="rst-variable-quote">'</span><span class="rst-variable-string">ZWST</span><span class="rst-variable-quote">'</span></code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="steganography.ZWNJ_1">
+    
+  </a>
+  <a name="ZWNJ_1">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">ZWNJ_1</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#ZWNJ_1" title="steganography.ZWNJ_1">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code><span class="rst-variable-quote">'</span><span class="rst-variable-string">‌</span><span class="rst-variable-quote">'</span></code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="steganography.ZWS_0">
+    
+  </a>
+  <a name="ZWS_0">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">ZWS_0</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#ZWS_0" title="steganography.ZWS_0">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code><span class="rst-variable-quote">'</span><span class="rst-variable-string">​</span><span class="rst-variable-quote">'</span></code></pre></td></tr></table>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="steganography._bits_to_bytes">
+    
+  </a>
+  <a name="_bits_to_bytes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_bits_to_bytes</span><span class="function-signature">(<span class="rst-sig-param">bits: <code>str</code></span>) -&gt; <code>bytes</code>:</span>
+    
+    <a class="headerLink" href="#_bits_to_bytes" title="steganography._bits_to_bytes">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Преобразует строку битов в байты.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">bits:</span>str</td><td class="fieldArgDesc">Строка из символов <tt class="rst-docutils rst-literal">'0'</tt> и <tt class="rst-docutils rst-literal">'1'</tt>.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">bytes</td><td class="fieldArgDesc">Байтовое представление данных.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>ValueError</code></td><td>Если количество битов не кратно 8.</td></tr></table></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="steganography._bytes_to_bits">
+    
+  </a>
+  <a name="_bytes_to_bits">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_bytes_to_bits</span><span class="function-signature">(<span class="rst-sig-param">data: <code>bytes</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#_bytes_to_bits" title="steganography._bytes_to_bits">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Преобразует байты в строку битов.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">data:</span>bytes</td><td class="fieldArgDesc">Исходные байты.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">str</td><td class="fieldArgDesc">Строка из символов <tt class="rst-docutils rst-literal">'0'</tt> и <tt class="rst-docutils rst-literal">'1'</tt>.</td></tr></table></div>
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for vigenere/run/steganography/test_full/utils/main/gui,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    25.10.1 at 2025-12-17 08:11:44.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
