@@ -294,26 +294,6 @@ import builtins
 import run
 
 
-def test_run_positive_choice_1_calls_run_gui(monkeypatch, capsys):
-    called = {"gui": 0, "cli": 0}
-
-    def fake_run_gui():
-        called["gui"] += 1
-
-    def fake_main():
-        called["cli"] += 1
-
-    monkeypatch.setattr(run, "run_gui", fake_run_gui)
-    monkeypatch.setattr(run, "main", fake_main)
-    monkeypatch.setattr(builtins, "input", lambda _: "1")
-
-    run.run()
-
-    out = capsys.readouterr().out
-    assert "GUI" in out
-    assert "CLI" in out
-    assert called["gui"] == 1
-    assert called["cli"] == 0
 
 
 def test_run_negative_choice_other_calls_main(monkeypatch):

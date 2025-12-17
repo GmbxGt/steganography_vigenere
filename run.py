@@ -22,7 +22,8 @@ def run() -> None:
         ``None``.
     """
     print("1 — GUI")
-    print("2 — CLI")
+    print("1 — CLI")
+    
     choice = input("Выбор: ").strip()
 
     if choice == "1":
